@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- <script src="https://kit.fontawesome.com/84b1f6e0ff.js" crossorigin="anonymous"></script> -->
+</head>
+
+    <body>
+
+        <!-- Encabezado  -->
+        <header class="main-header">
+            <div class="upper-bar">
+                <img src="/images/logo-mercado-liebre.svg" alt="logoML" class="logo">
+                <form class="search-box" action="#" method="GET">
+                    <label for="gsearch">Buscar Productos </label>
+                    <input type="search" id="gsearch" name="gsearch" >
+                    <i class="fas fa-search"></i>
+                </form>       
+
+                <p>
+                    <h2 class="icon-money">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        Comprá en cuotas y sin tarjeta de crédito
+                    </h2>
+                </p>
+            </div>
+                    
+            <nav class="bottom-bar">
+                <ul class="left-navbar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            
+                <ul class="right-navbar">
+                    <li><a href="/register">Crea tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                    <li><a href="/login">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+                       
+            <!-- Req M04C03 -->
+            <div class = "icon-bars" >
+                <i class = "fa fa-bars burger" ></i>
+            </div >
+
+        </header>
+
+        <!-- Req M04C06 login con botón de enviar que lleve a página ppal -->
+        <main>
+            <div class="login-form">
+                <h3 class="ingresar">Ingresá a tu cuenta</h3>
+                
+                <form action="/"  method="GET" class="go-login-pagin" >
+                    <div class="col-3"> 
+                        <input class="effect-11" type="text" name="username" id="username" placeholder="Nombre de usuario">
+                        <span class="focus-bg"></span>
+                    </div>
+
+                    <div class="col-3"> 
+                        <input class="effect-11" type="password" name="password" id="password" placeholder="Elegí tu contraseña">
+                        <span class="focus-bg"></span> 
+                    </div>
+
+                    <div>
+                        <button class="button-class" type="submit">Enviar</button>
+                    </div>
+
+                </form>
+                <script src="/css/effects.js"></script>
+            </div>   
+        </main>
+    </body>
+
+</html>

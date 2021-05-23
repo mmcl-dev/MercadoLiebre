@@ -1,0 +1,27 @@
+input[type="date"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 50%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.birth_class,
+.profile_class,
+.interests_class {
+    text-align: left;
+    border: none;
+}
+
+.user-profile {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-profile div {
+   justify-content: flex-start;
+   padding: 2px;
+}

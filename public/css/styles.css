@@ -1,0 +1,251 @@
+@import url("/css/login.css");
+@import url("/css/register.css");
+
+/* --  GLOBAL --*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* .titulo-ult-visita {
+
+} */
+
+
+
+/* -----------------------  HEADER  ------------------------------------------------------------------- */
+
+
+div.upper-bar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logo{
+    width: 200px;
+}
+
+
+/* .............  SEARCH BOX ..... */
+
+header .search-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 12px;
+    /* border: none;*/
+} 
+
+
+/* ............. Iconos Header ..... */
+
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+
+.icon-money{
+    font-weight: 700;
+    text-align: center;
+}
+
+.icon-bars{
+    background-color: #03264C;
+    color: #ffffff; 
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.bottom-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+
+
+
+/* ----------------------------------BANNER ------------------------------------------------ */
+
+section.banner img {
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+
+/* -----------------------  MAIN  -------------------------------------------------------------- */
+
+/* REQ M04C03 -  Tamaños Tipográficos 
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px */
+
+
+h3{
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento,
+.descripcion {
+    font-size: 16px;
+}
+
+.contenedor-visitas, 
+.contenedor-ofertas {
+   padding: 60px 0;
+   width: 90%;
+   max-width: 1000px;
+   margin: auto;
+   overflow: hidden;
+
+}
+
+
+
+/* .....   Galeria de productos ..... */
+
+.clase-seccion {
+    background: #f2f2f2;
+}
+
+.galeria-productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-prod {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    /* REQ M04C04 */
+    box-shadow : 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-prod > img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: block; 
+    
+}
+
+/* ............. Sección articulo logo precio ..... */
+/* REQ M04C04 - Req para productos */
+
+main section article i{
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    
+}
+
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+
+/* -----------------------  FOOTER  ------------------------------------------------------------------- */
+
+.footer-block i {
+    /* color:#03264C; */
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-block h2,p {
+    color:black;
+}
+
+.footer-block {
+    text-align: center;
+    padding: 20px 5px;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+/* --------------- MEDIA QUERIES ----------------- */
+/* REQ M04C04 */
+
+@media (min-width: 361px){
+    main section article .descripcion{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.galeria-productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.galeria-productos article{
+        width: 45%;
+    }
+
+    .precio,
+    .descuento{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.galeria-productos article{
+        width: 22%;
+    }
+}
